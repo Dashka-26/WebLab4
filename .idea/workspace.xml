@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eb77d31-c154-464b-81f4-b2c3ac9784a1" name="Changes" comment="Add robots.txt and sitemap.xml">
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
+    <list default="true" id="7eb77d31-c154-464b-81f4-b2c3ac9784a1" name="Changes" comment="Fix robots.txt and sitemap.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,26 +20,85 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Dashka-26"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dashka-26&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Dashka-26/WebLab4.git",
-    "accountId": "6adb1b63-a9c1-4459-9aa4-8d9aa74a5ccf"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dashka-26/WebLab4.git&quot;,
+    &quot;accountId&quot;: &quot;6adb1b63-a9c1-4459-9aa4-8d9aa74a5ccf&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
-}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000043372253813" />
+      <entry key="S5" value="1.012628572653967" />
+      <entry key="S10" value="1.1916538605012552" />
+      <entry key="S30" value="2.1952966577235857" />
+      <entry key="S60" value="2.8928764277858776" />
+      <entry key="M2" value="3.3827477614921326" />
+      <entry key="M5" value="3.735857947806567" />
+      <entry key="M10" value="3.864874910173403" />
+      <entry key="M15" value="3.909223869754251" />
+      <entry key="M30" value="3.954261983740889" />
+      <entry key="H1" value="3.9770428258053614" />
+      <entry key="H2" value="3.9884992860241733" />
+      <entry key="H4" value="3.9942441005858993" />
+      <entry key="D1" value="3.999039912739141" />
+      <entry key="W1" value="3.9998628257910513" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9395227492140118" />
+      <entry key="MS500" value="0.9876008614453725" />
+      <entry key="S2" value="0.996889990266436" />
+      <entry key="S5" value="1.0112955367601988" />
+      <entry key="S10" value="1.1902683274499293" />
+      <entry key="S30" value="2.193351575759829" />
+      <entry key="S60" value="2.89136669084309" />
+      <entry key="M2" value="3.3818014780379935" />
+      <entry key="M5" value="3.7354238056311564" />
+      <entry key="M10" value="3.86464763649252" />
+      <entry key="M15" value="3.9090700128240488" />
+      <entry key="M30" value="3.9541838657283104" />
+      <entry key="H1" value="3.9770034658061846" />
+      <entry key="H2" value="3.9884795303213614" />
+      <entry key="H4" value="3.994234203751545" />
+      <entry key="D1" value="3.999038260625366" />
+      <entry key="W1" value="3.9998625897100473" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3JuZ7XTsk8zPp9IJsRX0lsDAAPv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,6 +113,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -63,6 +128,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -80,7 +146,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790512747001</updated>
-      <workItem from="1790512748038" duration="2595000" />
+      <workItem from="1790512748038" duration="3261000" />
+      <workItem from="1790593894915" duration="468000" />
+      <workItem from="1790595433895" duration="5746000" />
     </task>
     <task id="LOCAL-00001" summary="Add starter project for Lab 4">
       <option name="closed" value="true" />
@@ -98,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790523823992</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix robots.txt and sitemap.xml">
+      <option name="closed" value="true" />
+      <created>1790524044785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790524044785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add starter project for Lab 4" />
     <MESSAGE value="Add robots.txt and sitemap.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add robots.txt and sitemap.xml" />
+    <MESSAGE value="Fix robots.txt and sitemap.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix robots.txt and sitemap.xml" />
   </component>
 </project>

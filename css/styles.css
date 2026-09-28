@@ -9,8 +9,8 @@
 
 :root {
   --ink: #111827;
-  --ink-muted: #939ba7;
-  --ink-soft: #717985;
+  --ink-muted: #6b7280; /* Виправлено контраст (було #939ba7) */
+  --ink-soft: #4b5563;  /* Виправлено контраст (було #717985) */
   --brand: #4f46e5;
   --brand-dark: #4338ca;
   --brand-tint: #eef2ff;
@@ -37,8 +37,9 @@ body {
   background: var(--surface);
 }
 
-:focus {
-  outline: none;
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
 }
 
 img {
@@ -140,6 +141,7 @@ a {
   font-size: 15px;
   font-weight: 500;
   color: #374151;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -198,6 +200,10 @@ a {
 
 .button--invert:hover {
   background: #eef0ff;
+}
+
+.button--invert:focus-visible {
+  outline-color: #ffffff;
 }
 
 .btn--ghost {
@@ -513,150 +519,6 @@ a {
 
 .prose h2 {
   margin-top: 40px;
-}
-
-/* Shared UI kit — carried over from the FlowTask app shell */
-
-.dashboard {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  min-height: 100vh;
-  background: var(--surface-alt);
-}
-
-.dashboard__sidebar {
-  padding: 24px 18px;
-  background: #0f172a;
-  color: #cbd5f5;
-}
-
-.dashboard__nav-link {
-  display: block;
-  padding: 9px 12px;
-  border-radius: 8px;
-  color: #cbd5f5;
-  text-decoration: none;
-}
-
-.dashboard__nav-link.is-active {
-  background: rgba(79, 70, 229, 0.24);
-  color: #ffffff;
-}
-
-.dashboard__topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  padding: 0 24px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-}
-
-.board {
-  display: flex;
-  gap: 16px;
-  padding: 24px;
-  overflow-x: auto;
-}
-
-.board__column {
-  flex: 0 0 280px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 14px;
-}
-
-.board__card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 12px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.06);
-}
-
-.board__card--urgent {
-  border-left: 3px solid #ef4444;
-}
-
-.tag {
-  display: inline-block;
-  padding: 2px 9px;
-  border-radius: 999px;
-  background: var(--brand-tint);
-  color: var(--brand-dark);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.tag--done {
-  background: #dcfce7;
-  color: #166534;
-}
-
-.tag--blocked {
-  background: #fee2e2;
-  color: #991b1b;
-}
-
-.avatar-stack {
-  display: flex;
-}
-
-.avatar-stack img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 2px solid var(--surface);
-  margin-left: -8px;
-}
-
-.modal {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(15, 23, 42, 0.5);
-}
-
-.modal__panel {
-  width: min(560px, 92vw);
-  background: var(--surface);
-  border-radius: 16px;
-  padding: 28px;
-}
-
-.toast {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  padding: 14px 18px;
-  border-radius: 12px;
-  background: #0f172a;
-  color: #ffffff;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.32);
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 15px;
-}
-
-.table th,
-.table td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--line);
-  text-align: left;
-}
-
-.table thead th {
-  background: var(--surface-alt);
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 /* Responsive */

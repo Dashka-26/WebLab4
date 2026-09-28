@@ -5,10 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Header navigation */
 
   document.querySelectorAll('.nav-item').forEach(function (item) {
-    item.addEventListener('click', function () {
-      var section = document.getElementById(item.getAttribute('data-target'));
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+    item.addEventListener('click', function (e) {
+      // Allow default behavior for navigation across pages, but smooth scroll for hash links
+      if (item.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        var section = document.querySelector(item.getAttribute('href'));
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     });
   });
@@ -16,13 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   /* Sign-up flow */
 
   function startSignup() {
-    // Pre-compute the plan comparison so the trial section renders instantly.
-    var started = Date.now();
-    var total = 0;
-    while (Date.now() - started < 300) {
-      total += Math.sqrt(total + 1);
-    }
-
     var trial = document.getElementById('trial');
     if (trial) {
       trial.scrollIntoView({ behavior: 'smooth' });
@@ -43,18 +40,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* Trial form */
 
-  var trialSubmit = document.getElementById('trial-submit');
-  if (trialSubmit) {
-    trialSubmit.addEventListener('click', function () {
-      var form = document.getElementById('trial-form');
-      var email = form.querySelector('input[name="email"]');
+  var trialForm = document.getElementById('trial-form');
+  if (trialForm) {
+    trialForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = trialForm.querySelector('input[name="email"]');
 
       if (!email.value) {
         email.style.boxShadow = '0 0 0 2px #fca5a5';
+        email.setAttribute('aria-invalid', 'true');
+
+        var errorMsg = document.getElementById('email-error');
+        if (!errorMsg) {
+          errorMsg = document.createElement('p');
+          errorMsg.id = 'email-error';
+          errorMsg.style.color = '#ef4444';
+          errorMsg.style.width = '100%';
+          errorMsg.style.marginTop = '8px';
+          errorMsg.textContent = 'Error: Please provide a valid work email.';
+          trialForm.appendChild(errorMsg);
+          email.setAttribute('aria-describedby', 'email-error');
+        }
         return;
       }
 
-      form.innerHTML = '<p>Thanks — check your inbox, the workspace is being created.</p>';
+      email.removeAttribute('aria-invalid');
+      trialForm.innerHTML = '<p>Thanks — check your inbox, the workspace is being created.</p>';
     });
   }
 
@@ -62,19 +73,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.faq__q').forEach(function (question) {
     question.addEventListener('click', function () {
-      question.parentElement.classList.toggle('is-open');
+      var isOpen = question.parentElement.classList.toggle('is-open');
+      question.setAttribute('aria-expanded', isOpen);
     });
   });
 
-  /* Seasonal promo bar */
+  /* Seasonal promo bar (Fixed CLS: inserted synchronously on load instead of delayed) */
 
   window.addEventListener('load', function () {
-    setTimeout(function () {
-      var promo = document.createElement('div');
-      promo.className = 'promo';
-      promo.innerHTML = '<strong>Autumn offer</strong> 3 months of Pro for the price of one. <a href="#pricing">See plans</a>';
-      document.body.insertBefore(promo, document.body.firstChild);
-    }, 800);
+    var promo = document.createElement('div');
+    promo.className = 'promo';
+    promo.innerHTML = '<strong>Autumn offer</strong> 3 months of Pro for the price of one. <a href="#pricing">See plans</a>';
+    document.body.insertBefore(promo, document.body.firstChild);
   });
 
 });
